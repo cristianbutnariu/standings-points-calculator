@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/red"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="1."
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/teamPic"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="9dp"
+        app:layout_constraintBottom_toBottomOf="@+id/place"
+        app:layout_constraintStart_toEndOf="@+id/place"
+        app:layout_constraintTop_toTopOf="@+id/place"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/teamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Rapid Bucuresti"
+        app:layout_constraintBottom_toBottomOf="@+id/teamPic"
+        app:layout_constraintStart_toEndOf="@+id/teamPic"
+        app:layout_constraintTop_toTopOf="@+id/teamPic" />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="18dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:text="10"
+        app:layout_constraintBottom_toBottomOf="@+id/form"
+        app:layout_constraintEnd_toStartOf="@+id/form"
+        app:layout_constraintTop_toTopOf="@+id/form" />
+
+    <include
+        android:id="@+id/form"
+        layout="@layout/form_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/goalsDifference"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:gravity="right"
+        android:text="+24"
+        app:layout_constraintBottom_toBottomOf="@+id/points"
+        app:layout_constraintEnd_toStartOf="@+id/points"
+        app:layout_constraintTop_toTopOf="@+id/points" />
+
+    <TextView
+        android:id="@+id/matchesPlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:text="12"
+        android:gravity="right"
+        app:layout_constraintBottom_toBottomOf="@+id/goalsDifference"
+        app:layout_constraintEnd_toStartOf="@+id/goalsDifference"
+        app:layout_constraintTop_toTopOf="@+id/goalsDifference" />
+    <View
+        android:id="@+id/line_12"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/undeline"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamPic" />
+</androidx.constraintlayout.widget.ConstraintLayout>

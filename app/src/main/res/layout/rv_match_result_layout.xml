@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rv_item_elevation"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/matchDate"
+        style="@style/DateStyle"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/datePlaceholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/homeTeamPic" />
+
+    <ImageView
+        android:id="@+id/homeTeamPic"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/matchDate"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/homeTeamName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/teamPlaceholder"
+        app:layout_constraintBottom_toBottomOf="@+id/homeTeamPic"
+        app:layout_constraintStart_toEndOf="@+id/homeTeamPic"
+        app:layout_constraintTop_toTopOf="@+id/homeTeamPic" />
+
+    <TextView
+        android:id="@+id/homeTeamScore"
+        style="@style/ScoreStyle"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/scorePlaceholder"
+        app:layout_constraintBottom_toBottomOf="@+id/homeTeamName"
+        app:layout_constraintStart_toEndOf="@+id/homeTeamName"
+        app:layout_constraintTop_toTopOf="@+id/homeTeamName" />
+
+    <TextView
+        android:id="@+id/awayTeamScore"
+        style="@style/ScoreStyle"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="10"
+        app:layout_constraintBottom_toBottomOf="@+id/awayTeamName"
+        app:layout_constraintStart_toEndOf="@+id/awayTeamName"
+        app:layout_constraintTop_toTopOf="@+id/awayTeamName" />
+
+    <TextView
+        android:id="@+id/awayTeamName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/teamPlaceholder"
+        app:layout_constraintBottom_toBottomOf="@+id/awayTeamPic"
+        app:layout_constraintStart_toEndOf="@+id/awayTeamPic"
+        app:layout_constraintTop_toTopOf="@+id/awayTeamPic" />
+
+    <ImageView
+        android:id="@+id/awayTeamPic"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toEndOf="@+id/matchDate"
+        app:layout_constraintTop_toBottomOf="@+id/homeTeamPic"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

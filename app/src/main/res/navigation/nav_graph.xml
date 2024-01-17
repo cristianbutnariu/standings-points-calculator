@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/predictionFragment">
+
+    <fragment
+        android:id="@+id/predictionFragment"
+        android:name="com.example.footballleaguepredictor.fragments.PredictionFragment"
+        android:label="fragment_prediction"
+        tools:layout="@layout/fragment_prediction" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.footballleaguepredictor.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/standingsFragment"
+        android:name="com.example.footballleaguepredictor.fragments.StandingsFragment"
+        android:label="fragment_standings"
+        tools:layout="@layout/fragment_standings" />
+</navigation>

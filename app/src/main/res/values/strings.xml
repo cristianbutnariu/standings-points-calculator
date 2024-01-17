@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FootballLeaguePredictor</string>
+    <string name="prediction">Prediction</string>
+    <string name="leagues">Leagues</string>
+    <string name="settings">Settings</string>
+    <string name="standings">Standings</string>
+    <string name="results">Results</string>
+    <string name="minusSign">-</string>
+    <string name="scorePlaceholder">10</string>
+    <string name="teamPlaceholder">Bayern Munchen</string>
+    <string name="datePlaceholder">14.08.2020</string>
+    <string name="matches">Matches</string>
+    <string name="title_activity_team_info">TeamInfoActivity</string>
+</resources>
